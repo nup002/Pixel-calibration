@@ -1,0 +1,13 @@
+This equation describes the maximum angle between two x-rays leaving
+an interaction area of 0.5mm radius and impinging on a detector 
+with radius 1.38mm at a distance Xcm.
+The interaction area is stationary, and the detector pointing towards
+the center of the interaction area, with an angle Y.
+
+atan((-sin(Y+0.138/x)*x - 0.05)/(cos(Y+0.138/x)*x)) + atan((-sin(Y-0.138/x)*x + 0.05)/(cos(Y-0.138/x)*x))
+
+
+
+This equation shows the amount of energy deposited by a gamma photon
+of energy E through compton scattering at an angle of Y
+E(1 - 510e3/(E*(1-cos(Y)) + 510e3))
